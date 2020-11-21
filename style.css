@@ -1,0 +1,569 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0;
+  background-color: rgb(153, 12, 47);
+  font-family: "Philosopher", sans-serif;
+  color: #fff;
+}
+h2 {
+  font-family: "Cinzel", serif;
+}
+/*Estilos al titulo*/
+.titulo {
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Cinzel", serif;
+  color: #fff;
+  font-size: 60px;
+}
+
+/*animaciones*/
+@keyframes desplazarUno {
+  from {
+    margin-top: 30px;
+  }
+  to {
+    margin-top: 40px;
+  }
+}
+@keyframes desplazarDos {
+  from {
+    margin-top: 90px;
+  }
+  to {
+    margin-top: 100px;
+  }
+}
+@keyframes desplazarTres {
+  from {
+    margin-top: 30px;
+  }
+  to {
+    margin-top: 40px;
+  }
+}
+@keyframes desplazarCuatro {
+  from {
+    margin-top: 40px;
+  }
+  to {
+    margin-top: 50px;
+  }
+}
+@keyframes desplazarCinco {
+  from {
+    margin-top: -40px;
+  }
+  to {
+    margin-top: -20px;
+  }
+}
+/*Estilos al menú*/
+
+/*Menú en general*/
+.menu {
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+/*Estilos a los items del menú*/
+.circuloUno,
+.circuloDos,
+.circuloTres,
+.circuloCuatro,
+.circuloCinco {
+  display: flex;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*Estilos al círculo uno*/
+.circuloUno {
+  animation-name: desplazarUno;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  color: rgb(255, 255, 255);
+  background-image: url(imagenes/Productos/textura.jpg);
+}
+.circuloUno p {
+  color: rgb(255, 255, 255);
+  background-image: url(imagenes/Productos/textura.jpg);
+}
+/*Estilos al círculo dos*/
+.circuloDos {
+  margin-top: 70px;
+  background-color: rgb(23, 77, 109);
+  animation-name: desplazarDos;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: rgb(255, 255, 255);
+  background-image: url(imagenes/Productos/textura.jpg);
+}
+.circuloDos p {
+  color: rgb(255, 255, 255);
+  background-image: url(imagenes/Productos/textura.jpg);
+}
+
+/*Estilos al circulo tres*/
+.circuloTres {
+  margin-top: 30px;
+  color: rgb(255, 255, 255);
+  background-image: url(imagenes/Productos/textura.jpg);
+  animation-name: desplazarTres;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.circuloTres p {
+  width: 80px;
+  color: rgb(255, 255, 255);
+  background-image: url(imagenes/Productos/textura.jpg);
+}
+/*Estilos al circulo cuatro*/
+.circuloCuatro {
+  margin-top: 40px;
+  color: rgb(255, 255, 255);
+  background-image: url(imagenes/Productos/textura.jpg);
+  animation-name: desplazarCuatro;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.circuloCuatro p {
+  color: rgb(255, 255, 255);
+  background-image: url(imagenes/Productos/textura.jpg);
+}
+/*Estilos al circulo cinco*/
+.circuloCinco {
+  margin-left: 65%;
+  margin-top: -40px;
+  color: rgb(255, 255, 255);
+  background-image: url(imagenes/Productos/textura.jpg);
+  animation-name: desplazarCinco;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.circuloCinco p {
+  color: rgb(255, 255, 255);
+  background-image: url(imagenes/Productos/textura.jpg);
+}
+
+/*Hacer circular al texto de los circulos*/
+.circuloUno p,
+.circuloDos p,
+.circuloTres p,
+.circuloCuatro p,
+.circuloCinco p {
+  border-radius: 50%;
+}
+/*Estilos a la primera imagen*/
+.imagen {
+  background-image: url("imagenes/Productos/dt.common.streams.StreamServer.cls.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.imagenPortada {
+  width: 100%;
+  height: 100%;
+}
+/*Estilos al primer contenedor (¿Que es?)*/
+.contenedorUno {
+  display: grid;
+  grid-template-rows: 250px auto;
+  grid-template-columns: 1fr;
+  width: 100%;
+  height: 100%;
+}
+/*Estilos al texto de que es?*/
+.definicion {
+  height: 100%;
+}
+.definicion h2 {
+  width: 400px;
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Cinzel", serif;
+}
+
+.definicion p {
+  font-size: large;
+  padding: 20px;
+  text-align: center;
+}
+
+/*Estilos al contenedor dos*/
+.contenedorDos {
+  font-family: "Alegreya", serif;
+  text-align: center;
+  font-size: large;
+  padding: 20px;
+}
+/*Estilos a los logos*/
+.logo1,
+.logo2,
+.logo3 {
+  align-content: center;
+  width: 150px;
+  height: 150px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.logo1 img,
+.logo2 img,
+.logo3 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+/*Estilos al parrafo de los logos*/
+.parabenos p,
+.siliconas p,
+.natural p {
+  margin-top: 20px;
+}
+#parrafoParabenos,
+#parrafoSiliconas,
+#parrafoNatural {
+  display: none;
+}
+
+/*Estilos a los items del contenedor Tres*/
+
+/*Estilos al titulo tres*/
+.tituloTres {
+  text-align: center;
+}
+
+/*Estilos a los logos*/
+.crueltyFree,
+.biodegradables,
+.agua {
+  display: flex;
+  padding: 20px;
+}
+/*Estilos a las imagenes de los logos*/
+.biodegradables img,
+.crueltyFree img,
+.agua img {
+  height: 100px;
+  width: 90px;
+}
+
+/*Estilo al texto de los logos*/
+.biodegradables p,
+.crueltyFree p,
+.agua p {
+  margin-left: 10px;
+  font-size: large;
+}
+
+/*Estilos al cuarto contenedor*/
+.contenedorCuatro {
+  margin-top: 20px;
+  width: 95%;
+}
+
+/*Estilos a las imagenes del contenedor cuatro*/
+.contenedorCuatro img {
+  width: 100%;
+  height: 250px;
+  /*filter: opacity(80%);*/
+}
+/*Estilos al titulo del contendor cuatro*/
+.contenedorCuatro h2 {
+  margin: 30px;
+  text-align: center;
+}
+/*Estilos al boton del contenedor cuatro*/
+#shampooBoton,
+#acondicionadorBoton,
+#jabonBoton,
+#cremaBoton {
+  background-color: rgb(61, 61, 61);
+  font-size: large;
+  height: 40px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/*************Estilos al modal************/
+
+/*Estilos al texto del modal*/
+.shampoo,
+.acondicionador,
+.jabon,
+.crema {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*Estilos al contenido del modal*/
+.shampooContenido,
+.acondicionadorContenido,
+.jabonContenido,
+.cremaContenido {
+  background-color: rgb(153, 12, 47);
+  margin: auto;
+  padding: 20px;
+  border: 3px solid rgb(61, 61, 61);
+  width: 80%;
+  text-align: center;
+}
+
+/*Estilos al boton cerrar del modal*/
+.cerrar,
+.cerrarDos,
+.cerrarTres,
+.cremaCuatro {
+  color: rgb(0, 0, 0);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 4px;
+}
+/*Hover y focus de cerrar*/
+.cerrar:hover,
+.cerrar:focus,
+.cerrarDos:hover,
+.cerrarDos:focus,
+.cerrarTres:hover,
+.cerrarTres:focus,
+.cerrarCuatro:hover,
+.cerrarCuatro:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Contenedor Cinco*/
+/*Estilos al subtitulo*/
+.contenedorCinco h2 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+/*Estilos al contenedor Cinco*/
+
+/*Estilos generales al slider*/
+.sliderCinco {
+  text-align: center;
+}
+.sliderCinco {
+  display: none;
+}
+.sliderCinco img {
+  vertical-align: middle;
+  width: 70%;
+  background-color: #fff;
+  height: 200px;
+}
+
+/*Estilos al contenedor del slider*/
+.sliderContainer {
+  height: 200px;
+  position: relative;
+  margin: auto;
+}
+
+/*Estilos al texto del slider*/
+.sliderTexto {
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background-color: #2c2c2c;
+}
+
+/* Estilos a los circulos (dots) del slider */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Animaciones */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*Estilos a la frase final*/
+.frase {
+  margin-top: 40px;
+  text-align: center;
+  color: #616060;
+}
+.frase p {
+  color: #b6b6b6;
+}
+
+/*Estilos al foooter*/
+.footer {
+  margin-top: 50px;
+}
+
+.footer p {
+  background-color: #2c2c2c;
+  text-align: center;
+  font-size: small;
+  height: 40px;
+}
+
+/*Medias querys sobre 580px*/
+
+@media screen and (min-width: 580px) {
+  .imagen {
+    width: 90%;
+    height: 100%;
+    align-content: center;
+  }
+  .sliderTexto {
+    margin-left: 10%;
+  }
+  .contenedorCuatro {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .contenedorCuatro {
+    width: 70%;
+  }
+}
+
+/*Medias querys sobre 790*/
+
+@media screen and (min-width: 790px) {
+  .imagen {
+    background-image: url("imagenes/Productos/Optimized-portada.png");
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    margin-left: 5%;
+  }
+
+  .contenedorUno {
+    margin-top: 40px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: 100%;
+  }
+  .sliderCinco img {
+    width: 60%;
+  }
+  .sliderTexto {
+    margin-left: 10%;
+  }
+}
+
+/*Medias querys sobre 910px*/
+
+@media screen and (min-width: 910px) {
+  .titulo {
+    font-size: 70px;
+  }
+  .circuloUno,
+  .circuloDos,
+  .circuloTres,
+  .circuloCuatro,
+  .circuloCinco {
+    height: 130px;
+    width: 130px;
+  }
+
+  .contenedorDos {
+    margin-top: 50px;
+  }
+  .contenedorTres {
+    width: 80%;
+    margin-top: 50px;
+  }
+
+  .parabenos p,
+  .siliconas p,
+  .natural p {
+    width: 900px;
+  }
+  .contenedorCuadros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+  .contenedorCuatro {
+    width: 75%;
+  }
+  .cremaContenedor {
+    width: 100%;
+  }
+  .jabonContenedor {
+    width: 100%;
+  }
+  .shampooContenedor {
+    width: 100%;
+  }
+  .acondicionadorContenedor {
+    width: 100%;
+  }
+
+  .sliderCinco img {
+    width: 40%;
+  }
+  .sliderTexto {
+    margin-left: 30%;
+  }
+}
